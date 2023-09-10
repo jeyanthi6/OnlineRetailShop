@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="home_container">
+    <div class="product_list">
+        <h3 class="heading">All Products</h3>
+        <div class="product_div">
+            <div *ngFor="let product of productList">
+                <div class="product" (click)="goToOrder(product);" *ngIf="product?.productName; else content">
+                        <div >
+                            <img class="product_image" src="assets/images/camera.jpg" alt="ProductImage">
+                        </div>
+                        <div class="productDesc">
+                            <div class="product_Id" hidden>{{ product.productId }}</div>
+                            <div class="product_Name">{{ product.productName }}</div>
+                            <div class="product_availavble">Quantity:<span class="product_count">{{ product.availableQuantity }}</span></div>
+                        </div>
+                </div>
+                <ng-template #content>  
+                  </ng-template>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>

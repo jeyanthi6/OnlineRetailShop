@@ -1,0 +1,65 @@
+.order_container{
+    display: flex;
+    width: 90%;
+    min-height: calc(100vh - 180px);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 10%;
+    position: relative;
+}
+
+.orderImg_div{
+    margin: 19px;
+    width: 50%;
+}
+.orderDesc_div{
+    margin: 19px;
+    width: 50%;
+}
+.order_img{
+    width: 100%;
+    height: 70vh;
+}
+
+.item_Name{
+    font-size: 5em;
+    word-break: break-all;
+}
+.item_Quantity{
+    font-size: 20px;
+    margin-left: 10px;
+}
+.item_Count, .item_Price{
+    color: rgb(236, 64, 64);
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.item_Price{
+    font-size: 2.5em;
+}
+
+.btn_cls{
+    color: #ffffff;
+    background-color: rgb(236, 64, 64);
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 25%;
+    border: none;
+    margin: 5% 2%;
+}
+
+.cont {
+    width: 93%;
+    max-width: 350px;
+    text-align: center;
+    color: #EEE;
+    overflow: hidden;
+    margin-top: 2%;
+    /* margin: 4% 0; */
+  }
+  
+  div.stars {
+    width: 270px;
+    display: inline-block;
+  }

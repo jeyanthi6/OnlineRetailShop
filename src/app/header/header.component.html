@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="header_container">
+            <img class="logo_img" src="assets/images/logo.png" alt="">
+            <h1 class="shop_Name">Retail Shop</h1>
+            <div class="add_product" (click)="openPopup()"><img class="add_image" src="assets/images/add.png"></div>
+            <!-- <p class="shop_cart">Cart</p> -->
+        </div>
+
+        <div class="popup" *ngIf="show" (click)="closeDialog($event);">
+            <div class="content" >
+                <div class="close" (click)="closePopup();">&times;</div>
+                <div class="addForm">
+                    Product Name: <span class="required_span">*</span> <input type="text" class="form-control" #addProName><br>
+                    Product Id: <span class="required_span">*</span><input type="text" class="form-control" #addProId><br>
+                    Quantity: <span class="required_span">*</span><input type="number" class="form-control" #addProCount>
+                    <button class="btn_cls" (click)="AddProduct();">Add Product</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

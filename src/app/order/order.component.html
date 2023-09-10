@@ -1,0 +1,26 @@
+<app-header></app-header>
+<form [formGroup]="form">
+    <div class="order_container">
+        <div class="orderImg_div">
+            <img class="order_img" src="assets/images/camera.jpg" alt="">
+        </div>
+        <div class="orderDesc_div">
+            <div class="item_Id" hidden #ProductIdElem>{{ data.productId }}</div>
+            <div class="item_Name">{{ data.productName }}</div>
+            <div class="item_Quantity">Available Count :<span class="item_Count">{{ data.availableQuantity }}</span></div>
+            <div class="item_Rating">
+                <div class="cont">
+                    <div class="stars">
+                        <ngx-star-rating formControlName="rating" [disabled] ="true"></ngx-star-rating>
+                    </div>
+                  </div>
+            </div>
+            <div class="item_Price">Rs. 25000/-</div>
+            <div>
+                <!-- <span><button class="btn_cls">Add to Cart</button></span> -->
+                <span><button (click)="OrderProduct();" class="btn_cls">Buy Now</button></span>
+            </div>
+        </div>
+    </div>
+    
+</form>
