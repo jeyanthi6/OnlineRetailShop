@@ -9,9 +9,9 @@ import { DataShareService } from '../data-share.service';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
-  getData(getData: any) {
-    throw new Error('Method not implemented.');
-  }
+  // getData(getData: any) {
+  //   throw new Error('Method not implemented.');
+  // }
 
   data:any;
   public form: FormGroup;
