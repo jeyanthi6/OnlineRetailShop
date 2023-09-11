@@ -34,4 +34,10 @@ describe('OrderComponent', () => {
     expect(component.ngOnInit()).toBeTrue();
   });
 
+  it('Should test HTML Tag',()=>{
+    const data = fixture.nativeElement;
+    expect(data.querySelector('.item_Count').textContent).toContain(0);
+    expect(data.querySelector('.item_Count').textContent).not.toContain(-1);
+  });
+
 });

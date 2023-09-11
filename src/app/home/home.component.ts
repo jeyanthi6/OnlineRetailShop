@@ -11,10 +11,8 @@ import { DataShareService } from '../data-share.service';
 })
 export class HomeComponent implements OnInit {
   errorMessage: any;
-  // getData(getData: any) {
-  //   throw new Error('Method not implemented.');
-  // }
   productList:any;
+  clickLink: any;
   
   constructor(private http:HttpClient,private router: Router, private share:DataShareService) { }
 
